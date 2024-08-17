@@ -31,12 +31,12 @@ export default function App() {
 
       <div className="grid grid-cols-2 grid-rows-2 gap-4">
         <Button
-          text="DigitalOcean Docs"
-          url="https://www.digitalocean.com/docs/app-platform"
+          text="Buy"
+          url="https://google.com"
         />
         <Button
-          text="DigitalOcean Dashboard"
-          url="https://cloud.digitalocean.com/apps"
+          text="Sell"
+          url="https://example.com"
         />
       </div>
     </div>
