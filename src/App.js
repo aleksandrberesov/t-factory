@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -10,10 +11,14 @@ import "./App.css";
 export default function App() {
   return (
     <div className="app min-h-screen text-blue-200 flex items-center flex-col p-20">
-      <script src="https://telegram.org/js/telegram-web-app.js">
-        let tg = window.Telegram.WebApp; 
-        tg.expand();
+      <h1>Geeksforgeeks: Как добавить внешнюю JavaScript-библиотеку в ReactJS?</h1>
+      <Helmet>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript" />
+        <script src="https://telegram.org/js/telegram-web-app.js">
+          let tg = window.Telegram.WebApp; 
+          tg.expand();
       </script>
+      </Helmet>
       <div className="mb-10 grid grid-cols-4 grid-rows-2 w-1/2 mx-auto">
         <img className="opacity-25" src={logo} alt="React Logo" width="300" />
         <img
