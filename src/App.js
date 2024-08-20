@@ -1,6 +1,5 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { initViewport } from '@telegram-apps/sdk';
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -53,14 +52,4 @@ function Button({ className, text, url = "#" }) {
       {text}
     </a>
   );
-}
-
-export async function FullScreen(){
-  const [viewport] = initViewport();
-
-  const vp = await viewport;
-
-  if (!vp.isExpanded) {
-      vp.expand(); // will expand the Mini App, if it's not
-  }
 }
