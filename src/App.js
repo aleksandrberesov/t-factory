@@ -4,14 +4,6 @@ import { initViewport } from '@telegram-apps/sdk';
 import logo from "./logo.svg";
 import "./App.css";
 
-/**
- * Uses Tailwind CSS for styling
- * Tailwind file is imported in App.css
- */
-
-
-
-
 export default function App() {
   return (
     <div className="app min-h-screen text-blue-200 flex items-center flex-col p-20">
@@ -63,7 +55,7 @@ function Button({ className, text, url = "#" }) {
   );
 }
 
-function FullScreen(){
+export async function FullScreen(){
   const [viewport] = initViewport();
 
   const vp = await viewport;
