@@ -6,7 +6,8 @@ import {FullScreen, GetUserData} from './telegram_integration';
 import * as serviceWorker from './serviceWorker';
 
 FullScreen();
-alert(GetUserData);
+const s = GetUserData();
+alert(s);
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
