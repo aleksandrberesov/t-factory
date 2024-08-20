@@ -1,6 +1,6 @@
-import { initViewport } from '@telegram-apps/sdk';
+import { initViewport, retrieveLaunchParams } from '@telegram-apps/sdk';
 
- export default async function FullScreen(){
+export async function FullScreen(){
     const [viewport] = initViewport();
   
     const vp = await viewport;
@@ -8,4 +8,11 @@ import { initViewport } from '@telegram-apps/sdk';
     if (!vp.isExpanded) {
         vp.expand(); // will expand the Mini App, if it's not
     }
-  }
+ }
+
+export function GetUserData(){
+    const { initDataRaw, initData } = retrieveLaunchParams();
+
+    return initData;
+}
+ 
