@@ -14,6 +14,6 @@ export function GetUserData(){
     const { initDataRaw, initData } = retrieveLaunchParams();
     const user = initData.user;
     const username = user.username;
-    return initData.user.id;
+    return initData.user.id+' '+user.firstName+' '+user.lastName+' '+user.languageCode;
 }
  
