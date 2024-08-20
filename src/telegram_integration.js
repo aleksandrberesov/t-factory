@@ -12,7 +12,7 @@ export async function FullScreen(){
 
 export function GetUserData(){
     const { initDataRaw, initData } = retrieveLaunchParams();
-    const user = initDataRaw.user;
+    const user = initData.user;
     const username = user.username;
     return username;
 }
